@@ -1,9 +1,10 @@
 <script setup>
-  import Layout from '../components/LayoutPage.vue';
+  //import Layout from '../components/LayoutPage.vue';
+  import TodoListView from './TodoListView.vue';
 </script>
 
 <template>
-  <Layout>
+  <!-- <Layout>
     <template #header>
       <div class="navbar-wrapper">
         <nav>
@@ -13,7 +14,8 @@
         </nav>
       </div>
     </template>
-  </Layout>
+  </Layout> -->
+  <TodoListView/>
 </template>
 
 <style scoped>

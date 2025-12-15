@@ -15,5 +15,6 @@
 <style scoped>
   .body-layout {
     margin-top: 100px;
+    padding: 0 24px;
   }
 </style>
