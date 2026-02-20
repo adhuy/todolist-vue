@@ -1,21 +1,22 @@
 <script setup>
-  //import Layout from '../components/LayoutPage.vue';
-  import TodoListView from './TodoListView.vue';
+  import Layout from '../components/LayoutPage.vue';
+  /* import TodoListView from './TodoListView.vue'; */
 </script>
 
 <template>
-  <!-- <Layout>
+  <Layout>
     <template #header>
       <div class="navbar-wrapper">
         <nav>
           <RouterLink to="/" class="link">Home</RouterLink>
           <RouterLink to="/blog" class="link">Blog</RouterLink>
           <RouterLink to="/todo-list" class="link">To do List</RouterLink>
+          <RouterLink to="/list" class="link">List</RouterLink>
         </nav>
       </div>
     </template>
-  </Layout> -->
-  <TodoListView/>
+  </Layout>
+  <!-- <TodoListView/> -->
 </template>
 
 <style scoped>

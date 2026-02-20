@@ -196,9 +196,9 @@
 
   .body-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     margin-top: 20px;
     gap: 20px;
   }
@@ -232,4 +232,10 @@
     border-radius: 12px;
     margin-bottom: 10px;
   }
+
+  @media (min-width: 768px) {
+    .body-content {
+      flex-direction: row;
+    }
+  } 
 </style>

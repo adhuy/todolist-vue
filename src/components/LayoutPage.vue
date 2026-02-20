@@ -14,7 +14,13 @@
 
 <style scoped>
   .body-layout {
-    margin-top: 100px;
+    margin-top: 20px;
     padding: 0 24px;
+  }
+
+  @media (min-width: 768px) {
+    .body-layout {
+      margin-top: 100px;
+    }
   }
 </style>

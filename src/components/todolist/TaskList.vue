@@ -42,6 +42,7 @@
         v-if="task.type === type.status"
         @dragstart="handleDrag(task, index)"
         @dragend="handleDragEnd"
+        @touchstart="handleDrag(task, index)"
         draggable="true"
       >
         <p>{{ task.title }}</p>
@@ -67,7 +68,7 @@
   .type-wrapper {
     display: flex;
     flex-direction: column;
-    width: calc(100% / 3);
+    width: 100%;
     background: #e6e6e6;
     border: 1px solid #999;
     border-radius: 12px;
@@ -150,5 +151,11 @@
     background: orange;
     font-size: 18px;
     font-weight: 600;
+  }
+
+  @media (min-width: 768px) {
+    .type-wrapper {
+      width: calc(100% / 3);
+    }
   }
 </style>
